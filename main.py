@@ -12,7 +12,7 @@ load_dotenv(dotenv_path=Path(".env"))
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
-api_key = os.getenv("AIzaSyDCQsrEkDdieOT0O19uDPe7-6NOKEvX8lM")
+api_key = os.getenv("INPUT_YOUR_API_KEY")
 model = None
 
 if api_key:
